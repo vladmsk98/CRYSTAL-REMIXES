@@ -22,6 +22,7 @@ main {
 }
 p img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -101,6 +102,12 @@ audio {
 .download-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+h3.active-track {
+  color: #fbc2eb;
+  transform: scale(1.05);
+  text-shadow: 0 0 15px rgba(251, 194, 235, 0.7);
+  transition: all 0.3s ease;
 }
 .contact-section {
   margin: 50px 0 30px;
@@ -187,74 +194,35 @@ audio {
 .feature-item:hover {
   transform: scale(1.1);
 }
-@media (max-width: 768px) {
-  body {
-    padding: 15px;
-  }
-  main {
-    padding: 15px;
-  }
+cite {
+  font-style: italic;
+  color: #a0a0c0;
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+}
+@media (max-width: 850px) {
   h2 {
     font-size: 2rem;
-    margin: 15px 0;
   }
   h3 {
     font-size: 1.5rem;
-    margin: 20px 0 10px;
-  }
-  .feature-item {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    gap: 10px;
-  }
-  audio {
-    width: 100%;
   }
 }
 @media (max-width: 480px) {
-  body {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-  main {
-    padding: 10px;
-  }
   h2 {
-    font-size: 1.7rem;
-    margin: 10px 0;
+    font-size: 1.8rem;
   }
   h3 {
     font-size: 1.3rem;
-    margin: 15px 0 8px;
-  }
-  .track-card {
-    padding: 15px;
-    margin: 20px 0;
-  }
-  .download-btn {
-    padding: 8px 16px;
-    font-size: 0.85rem;
-  }
-  .contact-section,
-  .about-section {
-    padding: 20px;
-  }
-  .social-links {
-    gap: 15px;
-  }
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1rem;
-  }
-  .features {
-    gap: 10px;
-  }
-  .feature-item {
-    padding: 6px 12px;
-    font-size: 0.85rem;
   }
   audio {
-    padding: 4px;
+    width: 100%;
   }
 }
